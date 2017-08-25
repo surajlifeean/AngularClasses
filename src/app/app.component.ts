@@ -10,7 +10,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name = 'suraj';
   visible=true;
-  toggleDiv(){
-  	this.visible=!this.visible;
-  }
+  counter=0;
+ 
+  	myFavLang = {
+  		'FrontEnd':['html','bootstrap','Angular'],
+  		'BackEnd': ['php','python','j2ee']
+  	};
+  
 }

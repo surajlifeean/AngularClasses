@@ -1,12 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 <div>
-    <p blueColored>Hello {{name}}</p>
+    <p blueColored>Hello {{name}}{{counter}}</p>
 </div>
-    <div *ngIf="visible; then oddClick else evenClick">This Works</div>
+    <div *ngIf="myFavLang.FrontEnd; let randomVariable">Yep!{{randomVariable.join(',')}}</div>
     <button (click)="toggleDiv()">Toggle</button>
-    <ng-template #oddClick> This is odd click</ng-template>
+    <ng-template #oddClick> This is for odd click</ng-template>
 
- 	<ng-template #evenClick> This is even click</ng-template>
+ 	<ng-template #evenClick> This is for even click</ng-template>
     
-
