@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div>
+    <p blueColored>Hello {{name}}</p>
+</div>
+    <div *ngIf="visible; then oddClick else evenClick">This Works</div>
+    <button (click)="toggleDiv()">Toggle</button>
+    <ng-template #oddClick> This is odd click</ng-template>
+
+ 	<ng-template #evenClick> This is even click</ng-template>
+    
+
