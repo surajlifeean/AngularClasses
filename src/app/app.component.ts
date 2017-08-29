@@ -20,7 +20,7 @@ export class AppComponent {
 
 ];
   myfunction(event){
-      this.mystring+=event.target.value;
+      this.name=event.target.value;
   }
   
 }
