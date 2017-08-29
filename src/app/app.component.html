@@ -3,7 +3,7 @@
 <div>
     <p blueColored>Hello {{name}}</p>
 </div>
-	 <input type="text"  [value]=name on-input="myfunction($event)">
+	 <input type="text" [(ngModel)]="name">
     <ul *ngFor="let language of myFavLang; let i=index;">
     	<li>{{i}}){{language.name}}-{{language.type}}</li>
     </ul>

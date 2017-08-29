@@ -19,8 +19,6 @@ export class AppComponent {
   		{'name':'php', 'type':'back'},
 
 ];
-  myfunction(event){
-      this.name=event.target.value;
-  }
+  
   
 }
