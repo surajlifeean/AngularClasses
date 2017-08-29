@@ -11,10 +11,16 @@ export class AppComponent {
   name = 'suraj';
   visible=true;
   counter=0;
+  mystring="";
  
-  	myFavLang = {
-  		'FrontEnd':['html','bootstrap','Angular'],
-  		'BackEnd': ['php','python','j2ee']
-  	};
+  	myFavLang = [
+  		{'name':'html', 'type':'front'},
+		{'name':'bootstrap', 'type':'front'},
+  		{'name':'php', 'type':'back'},
+
+];
+  myfunction(event){
+      this.mystring+=event.target.value;
+  }
   
 }

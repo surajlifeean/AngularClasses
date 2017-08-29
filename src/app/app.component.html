@@ -1,11 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 <div>
-    <p blueColored>Hello {{name}}{{counter}}</p>
+    <p blueColored>Hello {{name}}</p>
 </div>
-    <div *ngIf="myFavLang.FrontEnd; let randomVariable">Yep!{{randomVariable.join(',')}}</div>
-    <button (click)="toggleDiv()">Toggle</button>
-    <ng-template #oddClick> This is for odd click</ng-template>
-
- 	<ng-template #evenClick> This is for even click</ng-template>
-    
+	 <input type="text"  [value]=name on-keydown="myfunction($event)">
+    <ul *ngFor="let language of myFavLang; let i=index;">
+    	<li>{{i}}){{language.name}}-{{language.type}}</li>
+    </ul>
+ {{mystring}}
+ <br>
